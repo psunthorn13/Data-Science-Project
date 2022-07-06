@@ -1,4 +1,3 @@
-You can access the application through this link :
+# You can access the application through this link
 
-
-https://psunthorn13.shinyapps.io/
+https://psunthorn13.shinyapps.io/COVID-Dashboard/
