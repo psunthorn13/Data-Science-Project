@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ 	<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container">
+
+			<a class="navbar-brand" href="https://www.linkedin.com/in/pichaphop/">Contact Me</a>
+
+        </div>
+    </nav>
+
+	<div class="container">
+		<br>
+		<p style="font-size: 3rem; text-align: center; color:#00147A; "> Text Classification in Thai Language </p>
+		<form action="{{ url_for('predict')}}" method="POST">
+
+		<p style="margin-top:2em">The objective of this project is to create end-to-end app that uses NLP model for Thai Language to classify message category so that users can take action accordingly.
+		We uses dataset from Thai text classification workshop
+			(https://www.youtube.com/watch?v=DRWXKUAEa4s&list=WL&index=61), which is the sample data encoded from call center voice from the telecommunication company(True).
+		There are 7 actions/ classes, which will be predicted namely enquire, report,cancel, buy, activate,request, change
+
+		<h2 style="margin-top:1em ; font-size: 2rem; text-align: center;color:#00147A; ">Enter Your Message Here</h2>
+		<p style="text-align: center"><textarea name="message" rows="3" cols="100"></textarea></p>
+
+		<p style="text-align: center"> <input type="submit" class="btn-info" value="Predict"> </p>
+
+		<h4>Example </h4>
+		</p>
+		<p style="color:red"> - ให้รหัสไวไฟมา ใส่เท่าไหร่ก็เด้งไม่ถูกต้อง
+		<br> - ตะกี้ไปชำระค่าบริการไปแล้ว แต่ยังใช้งานไม่ได้ ค่ะ
+		<br> - internet 1k ที่สมัครไว้ใช้งานหมดแล้ว สามารถสมัครใหม่ได้หรือเปล่าครับ
+		</p>
+
+
+	</form>
+
+	</div>
+
+
+
+
+</body>
+</html>
